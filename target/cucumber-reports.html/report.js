@@ -1,51 +1,91 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/com/ui/automation/features/APItest.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/com/ui/automation/features/Testfeature.feature");
 formatter.feature({
-  "name": "Using get methods for validating the response of ticker\u0027s precision value",
+  "name": "Validate the new price information after applying the promocode if not applied before",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Validate valid response data using Ticker names listed in a file",
+  "name": "Check the price of selected item in the cart",
   "description": "",
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "baseURI of the rest service",
+  "name": "Launch the application URL",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.ui.automation.stepdefinition.TestStepAPIdef.baseuri_of_the_rest_service()"
+  "location": "com.ui.automation.stepdefinition.Stepdefinition.launch_the_application_URL()"
 });
 formatter.result({
-  "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.ui.automation.stepdefinition.TestStepAPIdef.baseuri_of_the_rest_service(TestStepAPIdef.java:17)\r\n\tat ✽.baseURI of the rest service(file:///C:/Users/kotla.naveen/workspace/HackathonTeamB/./src/test/java/com/ui/automation/features/APItest.feature:5)\r\n",
-  "status": "pending"
+  "error_message": "java.lang.NullPointerException\r\n\tat com.ui.automation.testBase.TestBase.initialisation(TestBase.java:32)\r\n\tat com.ui.automation.stepdefinition.Stepdefinition.launch_the_application_URL(Stepdefinition.java:15)\r\n\tat ✽.Launch the application URL(file:///C:/Users/aishwarya.tripathy/workspace/HackathonTeamB/./src/test/java/com/ui/automation/features/Testfeature.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "when user selects the ticker name",
+  "name": "Mouse over for selecting All Categories link",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.ui.automation.stepdefinition.TestStepAPIdef.when_user_selects_the_ticker_name()"
+  "location": "com.ui.automation.stepdefinition.Stepdefinition.mouse_over_for_selecting_All_Categories_link()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "click on send request",
+  "name": "Select Offers link",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.ui.automation.stepdefinition.TestStepAPIdef.click_on_send_request()"
+  "location": "com.ui.automation.stepdefinition.Stepdefinition.select_Offers_link()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "response should be displayed with the ticker data in response body",
-  "keyword": "Then "
+  "name": "Select Health and Safety",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.ui.automation.stepdefinition.TestStepAPIdef.response_should_be_displayed_with_the_ticker_data_in_response_body()"
+  "location": "com.ui.automation.stepdefinition.Stepdefinition.select_Health_and_Safety()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Clicking on a link under Health and Safety",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.ui.automation.stepdefinition.Stepdefinition.clicking_on_a_link_under_Health_and_Safety()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Select an item",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.ui.automation.stepdefinition.Stepdefinition.select_an_item()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Capture the price of the selected item",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.ui.automation.stepdefinition.Stepdefinition.capture_the_price_of_the_selected_item()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Goto the cart and view the cart",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.ui.automation.stepdefinition.Stepdefinition.goto_the_cart_and_view_he_cart()"
 });
 formatter.result({
   "status": "skipped"
